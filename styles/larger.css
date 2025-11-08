@@ -1,0 +1,46 @@
+@media (min-width: 320px) {
+    
+    /* #region Hamburger Menu */
+    .header span {
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    /* #endregion */
+
+}
+
+@media (min-width: 500px) {
+
+    /* #region Hamburger Menu */
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+    /* #endregion */
+
+    .profile {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

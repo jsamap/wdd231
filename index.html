@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Web Frontend Development I | Jared Samayoa</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <button type="button" id="menu"><span>Menu</span></button>
+        <div class="header">
+            <img src="images/logo.svg" alt="logo">
+            <span>JARED SAMAYOA</span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home" id="home" class="active">Home</a></li>
+                <li><a href="chamber" id="chamber">Chamber</a></li>
+                <li><a href="final" id="final">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="profile">
+            <section>
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>My name is Jared Samayoa and I'm from Guatemala City. I'm 28 years old and I've been married for 6 years. I returned from serving a mission in El Salvador 8 years ago. I like video games, table tennis, mountain biking, playing bass and to spend time with my wife and my husky. I'm currently working as an automation developer. I enrolled to this class to learn more about Web Development and to take a step towards my degree.</p>        
+                </div>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <div class="section-content">
+                    <img src="images/profile.webp" alt="Profile picture">
+                </div>
+            </section>
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="courses section-content">
+                <div class="buttons">
+                    <a href="" id="All">All</a>
+                    <a href="" id="CSE">CSE</a>
+                    <a href="" id="WDD">WDD</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/jsamap"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/jaredsamayoa"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="http://wa.me/+50234000940"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+            <a href="https://www.xbox.com/en-us/play/user/HaloShot96"><img src="images/xbox.svg" alt="Xbox"></a>
+        </div>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
