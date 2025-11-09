@@ -122,7 +122,7 @@ h2 {
     display: none;
 }
 header img {
-    width: 100px;
+    height: 50px;
 }
 .open a {
 	display: block;
@@ -133,6 +133,10 @@ header img {
 section{
     text-align: center;
     padding: 0 15px 15px 15px;
+}
+main section{
+    text-align: center;
+    padding: 0 15px 10px 15px;
 }
 section p {
     padding: 10px;
@@ -150,7 +154,7 @@ section img {
     padding: 10px;
 }
 .buttons a {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--font2-color);
     font-weight: bold;
     width: 100%;
@@ -175,10 +179,55 @@ section img {
 }
 #courses p {
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.3rem;
     margin: 5px 0;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--font2-color);
+}
+#credits {
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    background-color: black;
+    padding: 0.5rem;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 0.5rem;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--accent2-color) solid 1px;
+    border-radius: 22px;
+}
+.social img {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%);
+}
+.social a:hover {
+    background-color: var(--tertiary-color);
+}
+#footer {
+    font-size: 1rem;
+    color: var(--font3-color);
+}
+#lastModified {
+    color: var(--font2-color);
+}
+.lastModified {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
 }
 /* #endregion */

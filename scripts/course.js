@@ -78,10 +78,10 @@ const courses = [
     }
 ]
 
-
 const container = document.querySelector("#courses");
 
 buildCards(courses);
+updateCredits(courses);
 
 function buildCards(courses){
 	courses.forEach(course => {
@@ -91,47 +91,38 @@ function buildCards(courses){
 		container.appendChild(p);
 	});
 }
+function updateCredits(courses){
+    let credits = 0
+    courses.forEach(course => {
+        credits += course.credits;
+	});
 
+    const creditsLabel = document.querySelector("#credits");
+    creditsLabel.textContent = `The total credits for courses listed above is ${credits}`;
+}
+function deleteCards(){
+	Array.from(container.children).forEach(child => child.remove());
+}
 
-// const homeButton = document.querySelector("#home");
-// homeButton.addEventListener('click', () => {
-// 	title.textContent = "Home";
-// 	deleteCards();
-// 	buildCards(temples);
-// });
+const allButton = document.querySelector("#all");
+allButton.addEventListener('click', () => {
+	deleteCards();
+	buildCards(courses);
+    updateCredits(courses);
+});
 
-// const oldButton = document.querySelector("#old");
-// oldButton.addEventListener('click', () => {
-// 	title.textContent = "Old";
-// 	deleteCards();
-// 	const sortedTemples = temples.slice().filter(temple => new Date(temple.dedicated) < new Date("1900"));
-// 	sortedTemples.sort((a, b) => new Date(a.dedicated) - new Date(b.dedicated));
-// 	buildCards(sortedTemples);
-// });
+const cseButton = document.querySelector("#cse");
+cseButton.addEventListener('click', () => {
+	deleteCards();
+	const filteredCourses = courses.slice().filter(course => course.subject == "CSE");
+	buildCards(filteredCourses);
+    updateCredits(filteredCourses);
+});
 
-// const newButton = document.querySelector("#new");
-// newButton.addEventListener('click', () => {
-// 	title.textContent = "New";
-// 	deleteCards();
-// 	const sortedTemples = temples.slice().filter(temple => new Date(temple.dedicated) > new Date("2000"));
-// 	sortedTemples.sort((a, b) => new Date(b.dedicated) - new Date(a.dedicated));
-// 	buildCards(sortedTemples);
-// });
-
-// const largeButton = document.querySelector("#large");
-// largeButton.addEventListener('click', () => {
-// 	title.textContent = "Large";
-// 	deleteCards();
-// 	const sortedTemples = temples.slice().filter(temple => temple.area > 90000);
-// 	sortedTemples.sort((a, b) => b.area - a.area);
-// 	buildCards(sortedTemples);
-// });
-
-// const smallButton = document.querySelector("#small");
-// smallButton.addEventListener('click', () => {
-// 	title.textContent = "Small";
-// 	deleteCards();
-// 	const sortedTemples = temples.slice().filter(temple => temple.area < 10000);
-// 	sortedTemples.sort((a, b) => a.area - b.area);
-// 	buildCards(sortedTemples);
-// });
+const wddButton = document.querySelector("#wdd");
+wddButton.addEventListener('click', () => {
+	deleteCards();
+	const filteredCourses = courses.slice().filter(course => course.subject == "WDD");
+	buildCards(filteredCourses);
+    updateCredits(filteredCourses);
+});
