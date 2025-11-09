@@ -113,7 +113,11 @@ function deleteCards(){
 	Array.from(container.children).forEach(child => child.remove());
 }
 
-allButton.classList.add('selected');
+allButton.style.color = 'white';
+cseButton.style.color = 'white';
+wddButton.style.color = 'white';
+
+allButton.classList.add('selected', 'text');
 cseButton.classList.add('non-selected');
 wddButton.classList.add('non-selected');
 
