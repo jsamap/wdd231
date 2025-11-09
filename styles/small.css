@@ -17,6 +17,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.selected {
+    background-color: var(--tertiary-color);
+}
+.non-selected {
+    background-color: var(--primary-color);
+}
 h1, h2, h3, h4 ,.header span{
     font-family: var(--heading-font);
 }
@@ -41,7 +47,7 @@ button {
 	background: none;
 	color: var(--font2-color);
 	position: absolute;
-	top: 1.4rem;
+	top: 0.6rem;
 	right: 1rem;
     width: 50px;
 }
@@ -154,7 +160,6 @@ section img {
     padding: 10px;
 }
 .buttons a {
-    background-color: var(--primary-color);
     color: var(--font2-color);
     font-weight: bold;
     width: 100%;
@@ -182,11 +187,17 @@ section img {
     padding: 0.3rem;
     margin: 5px 0;
     width: 100%;
-    background-color: var(--secondary-color);
+    height: 75%;
     color: var(--font2-color);
 }
 #credits {
     text-align: center;
+}
+.completed {
+    background-color: var(--secondary-color);
+}
+.pending {
+    background-color: #3b3b3b;
 }
 /* #endregion */
 

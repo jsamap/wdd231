@@ -79,6 +79,9 @@ const courses = [
 ]
 
 const container = document.querySelector("#courses");
+const allButton = document.querySelector("#all");
+const cseButton = document.querySelector("#cse");
+const wddButton = document.querySelector("#wdd");
 
 buildCards(courses);
 updateCredits(courses);
@@ -87,6 +90,12 @@ function buildCards(courses){
 	courses.forEach(course => {
 		const p = document.createElement('p');
 		p.textContent = course.title;
+        if (course.completed){
+            p.classList.add("completed");
+            p.textContent = `✔ ${p.textContent}`;
+        }else{
+            p.classList.add("pending");
+        }
 
 		container.appendChild(p);
 	});
@@ -104,25 +113,50 @@ function deleteCards(){
 	Array.from(container.children).forEach(child => child.remove());
 }
 
-const allButton = document.querySelector("#all");
-allButton.addEventListener('click', () => {
+allButton.classList.add('selected');
+cseButton.classList.add('non-selected');
+wddButton.classList.add('non-selected');
+
+allButton.addEventListener('click', (event) => {
+    event.preventDefault();
 	deleteCards();
 	buildCards(courses);
     updateCredits(courses);
+    
+	allButton.classList.add('selected');
+	allButton.classList.remove('non-selected');
+	cseButton.classList.remove('selected');
+	cseButton.classList.add('non-selected');
+	wddButton.classList.remove('selected');
+	wddButton.classList.add('non-selected');
 });
 
-const cseButton = document.querySelector("#cse");
-cseButton.addEventListener('click', () => {
+cseButton.addEventListener('click', (event) => {
+    event.preventDefault();
 	deleteCards();
 	const filteredCourses = courses.slice().filter(course => course.subject == "CSE");
 	buildCards(filteredCourses);
     updateCredits(filteredCourses);
+
+	allButton.classList.remove('selected');
+	allButton.classList.add('non-selected');
+	cseButton.classList.add('selected');
+	cseButton.classList.remove('non-selected');
+	wddButton.classList.remove('selected');
+	wddButton.classList.add('non-selected');
 });
 
-const wddButton = document.querySelector("#wdd");
-wddButton.addEventListener('click', () => {
+wddButton.addEventListener('click', (event) => {
+    event.preventDefault();
 	deleteCards();
 	const filteredCourses = courses.slice().filter(course => course.subject == "WDD");
 	buildCards(filteredCourses);
     updateCredits(filteredCourses);
+
+	allButton.classList.remove('selected');
+	allButton.classList.add('non-selected');
+	cseButton.classList.remove('selected');
+	cseButton.classList.add('non-selected');
+	wddButton.classList.add('selected');
+	wddButton.classList.remove('non-selected');
 });
