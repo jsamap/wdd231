@@ -8,7 +8,7 @@
         padding: 0.5rem;
     }
     /* #endregion */
-
+    
 }
 
 @media (min-width: 500px) {
@@ -38,7 +38,17 @@
 		flex: 1 1 100%;
 	}
     /* #endregion */
-
+    
+    /* #region Cards */
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        place-items: center;
+        padding: 0 10px;
+    }
+    /* #endregion */
+    
     .profile {
         display: grid;
         grid-template-columns: 2fr 1fr;

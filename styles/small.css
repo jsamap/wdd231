@@ -5,7 +5,7 @@
     --tertiary-color: #754300;
     --accent1-color: yellow;
     --accent2-color: #999999;
-    --accent3-color: #6fc8f9;
+    --accent3-color: #EBB265;
     --font1-color: black;
     --font2-color: #f2f2f2;
     --font3-color: white;
@@ -41,7 +41,7 @@ button {
 	background: none;
 	color: var(--font2-color);
 	position: absolute;
-	top: 2.5rem;
+	top: 1.4rem;
 	right: 1rem;
     width: 50px;
 }
@@ -130,41 +130,55 @@ header img {
 /* #endregion*/
 
 /* #region Main */
-    section{
-        text-align: center;
-        padding: 0 15px 15px 15px;
-    }
-    section p {
-        padding: 10px;
-        text-align: left;
-    }
-    section img {
-        max-width: 200px;
-        padding: 10px;
-        border-radius: 15px;
-    }
-    .buttons {
-        display: flex;
-        width: 100%;
-        gap: 15px;
-        padding: 10px;
-    }
-    .buttons a {
-        background-color: var(--secondary-color);
-        color: var(--font2-color);
-        font-weight: bold;
-        width: 100%;
-        text-decoration: none;
-        border-radius: 5px;
-        padding: 5px;
-    }
-    .buttons a:hover {
-        background-color: var(--primary-color);
-    }
-    .section-content {
-        background-color: var(--font2-color);
-        height: 90%;
-    }
+section{
+    text-align: center;
+    padding: 0 15px 15px 15px;
+}
+section p {
+    padding: 10px;
+    text-align: left;
+}
+section img {
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 10px;
+}
+.buttons a {
+    background-color: var(--secondary-color);
+    color: var(--font2-color);
+    font-weight: bold;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.buttons a:hover {
+    background-color: var(--tertiary-color);
+}
+.section-content {
+    background-color: var(--font2-color);
+    height: 90%;
+}
 
+/* #endregion */
 
+/* #region Cards */
+#courses {
+    display: block;
+    padding: 0 10px 10px 10px;
+}
+#courses p {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 5px 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--font2-color);
+}
 /* #endregion */
