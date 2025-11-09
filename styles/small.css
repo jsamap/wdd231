@@ -220,6 +220,8 @@ footer {
     height: 44px;
     border: 1px solid white;
     border-radius: 22px;
+    color: white;
+    text-decoration: none;
 }
 .social img {
     width: 22px;
