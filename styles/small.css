@@ -224,7 +224,6 @@ footer {
 .social img {
     width: 22px;
     height: 22px;
-    filter: invert(100%);
 }
 .social a:hover {
     background-color: var(--tertiary-color);
