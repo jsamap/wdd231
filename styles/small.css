@@ -218,7 +218,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: var(--accent2-color) solid 1px;
+    border: 1px solid white;
     border-radius: 22px;
 }
 .social img {
