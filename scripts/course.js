@@ -101,10 +101,7 @@ function buildCards(courses){
 	});
 }
 function updateCredits(courses){
-    let credits = 0
-    courses.forEach(course => {
-        credits += course.credits;
-	});
+    const credits = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
 
     const creditsLabel = document.querySelector("#credits");
     creditsLabel.textContent = `The total credits for courses listed above is ${credits}`;
