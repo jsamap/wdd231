@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +16,18 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
     <meta property="og:title" content="Guatemala City's Chamber of Commere">
-    <meta property="og:description" content="Discover local businesses, events, and resources with the Guatemala City's Chamber of Commerce.">
+    <meta property="og:description"
+        content="Discover local businesses, events, and resources with the Guatemala City's Chamber of Commerce.">
     <meta property="og:url" content="https://jsamap.github.io/wdd231/chamber/directory.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://jsamap.github.io/wdd231/images/logo.svg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Guatemala City's Chamber of Commerce">
 </head>
+
 <body>
     <header>
         <button type="button" id="menu"><span>Menu</span></button>
@@ -34,42 +37,98 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a href="#" id="home" class="active">Home</a></li>
-                <li><a href="#" id="chamber">Chamber</a></li>
-                <li><a href="#" id="final">Final</a></li>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="discover">Discover</a></li>
+                <li><a href="#" id="directory" class="active">Directory</a></li>
+                <li><a href="#" id="join">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Home</h1>
-        <div class="profile">
-            <section>
-                <h2>About Me</h2>
-                <div class="section-content">
-                    <p>My name is Jared Samayoa and I'm from Guatemala City. I'm 28 years old and I've been married for 6 years. I returned from serving a mission in El Salvador 8 years ago. I like video games, table tennis, mountain biking, playing bass and to spend time with my wife and my husky. I'm currently working as an automation developer. I enrolled to this class to learn more about Web Development and to take a step towards my degree.</p>        
-                </div>
-            </section>
-            <section>
-                <h2>Student Photo</h2>
-                <div class="section-content">
-                    <img src="images/profile.webp" alt="Profile picture">
-                </div>
-            </section>
+        <h1>Directory</h1>
+
+        <!-- <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
-        <section>
-            <h2>Web Certificate Courses</h2>
-            <div class="courses section-content">
-                <div class="buttons">
-                    <a href="#" id="all">All</a>
-                    <a href="#" id="cse">CSE</a>
-                    <a href="#" id="wdd">WDD</a>
-                </div>
-                <div id="courses">
-                    
-                </div>
-                <p id="credits"></p>
-            </div>
-        </section>
+
+        <article class="grid">
+            <section>
+                <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg"
+                    alt="Payson Utah Temple" />
+                <h3>Payson Utah</h3>
+                <p>2015</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg"
+                    alt="Boise Idaho Temple" />
+                <h3>Boise Idaho</h3>
+                <p>1984</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng"
+                    target="_blank">Details
+                </a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg"
+                    alt="Oakland California Temple" />
+                <h3>Oakland California</h3>
+                <p>1964</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng"
+                    target="_blank">Details </a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/72/14/7214efb047426ffe6b581906fa0092a624ebc637/seattle_washington_temple_exterior.jpg"
+                    alt="Seattle Washington Temple" />
+                <h3>Seattle Washington</h3>
+                <p>1980</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/seattle-washington-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/2c/77/2c77d5fd39c0646e0122b1a1472f1d538aa3aa7e/portland_oregon_temple.jpeg"
+                    alt="Portland Oregon Temple" />
+                <h3>Portland Oregon</h3>
+                <p>1989</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/portland-oregon-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/e5/54/e5546a3599c023ba83a4d751fb6fc196b5ab6ada/jordan_river_temple_exterior_images.jpeg"
+                    alt="Jordan River Utah" />
+                <h3>Jordan River Utah</h3>
+                <p>1981</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/jordan-river-utah-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/77/eb/77eb82391ad1795a117b25ee3deaf2a4d229311a/provo_temple_lds.jpg"
+                    alt="Portland Oregon Temple" />
+                <h3>Provo Utah</h3>
+                <p>1972</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+
+            <section>
+                <img src="https://assets.ldscdn.org/57/18/5718c8b9c5a103646c0bd22554cb268b88986f05/provo_city_center_temple_exterior.jpg"
+                    alt="Provo City Center Temple" />
+                <h3>Provo City Center</h3>
+                <p>2016</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng"
+                    target="_blank">Details</a>
+            </section>
+        </article> -->
+
+
+
     </main>
     <footer>
         <div class="social">
@@ -78,8 +137,10 @@
             <a href="http://wa.me/+50234000940"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
             <a href="https://www.xbox.com/en-us/play/user/HaloShot96"><img src="images/xbox.svg" alt="Xbox"></a>
         </div>
-        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared
+            Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
         <p class="lastModified"><span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
