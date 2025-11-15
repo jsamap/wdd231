@@ -32,20 +32,20 @@
         "service_type": "Travel Agency"
     },
     {
-        "name": "Casa del Jade",
-        "address": "4 Calle  Oriente #10, Edificio El Jaulón (Guatemala, Sacatepéquez, Región Central)",
-        "phone_number": "+(502) 7932-5700",
-        "websiteUrl": "http://www.lacasadeljade.com/",
-        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/475839713_594713356527642_3460266607133264681_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7uJGRONv7YMQ7kNvwG103Wk&_nc_oc=AdnoQzt6AS7Srge3xcJSGrLl3juZd7QJA4iFFeX8TxP6a3YfTXrCgtKL89SAg4-2GZuXVC9RBQY0y2KQhA2SBBH2&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=28DKuKTHg9uTaEA581iLdw&oh=00_Afgm4AOig1hjpQH7UOZWd5U2HwExQDAsDArrAlEJxrquAQ&oe=691DA0F4",
-        "service_type": ""
-    },
-    {
         "name": "INNODENT",
         "address": "3 Avenida 2-54 B Zona 2 (Guatemala, Chimaltenango, Región Central)",
         "phone_number": "+(502) 5488-2156",
         "websiteUrl": "http://www.innodent.com.gt/",
         "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/481273735_1205590188233611_4675746966378629086_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=h7QAo82QwwUQ7kNvwEtpoE1&_nc_oc=AdlazrBnj30L4N4ShOqvttT1nRozq0VXGi9f-XHyJDnfELtksUlQ3R68zrSLCrP6qmnysBgpbcDgK6Dx3xDI25eM&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=DE0iqkeWGpRmMpMeGwY3Yg&oh=00_AfiBl9SvVd_lz14Uhqi48-jQqi0pcJXX7AjK7zBLW_Qfww&oe=691D9F35",
         "service_type": "Dental Clinic"
+    },
+    {
+        "name": "Casa del Jade",
+        "address": "4 Calle  Oriente #10, Edificio El Jaulón (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 7932-5700",
+        "websiteUrl": "http://www.lacasadeljade.com/",
+        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/475839713_594713356527642_3460266607133264681_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7uJGRONv7YMQ7kNvwG103Wk&_nc_oc=AdnoQzt6AS7Srge3xcJSGrLl3juZd7QJA4iFFeX8TxP6a3YfTXrCgtKL89SAg4-2GZuXVC9RBQY0y2KQhA2SBBH2&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=28DKuKTHg9uTaEA581iLdw&oh=00_Afgm4AOig1hjpQH7UOZWd5U2HwExQDAsDArrAlEJxrquAQ&oe=691DA0F4",
+        "service_type": "Jewelry"
     },
     {
         "name": "El Mástil",

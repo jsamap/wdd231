@@ -29,17 +29,13 @@ const displayMembers = (members) => {
 
         const service = document.createElement('p');
         service.textContent = member.service_type;
-
-        const phone = document.createElement('a');
-        phone.textContent = member.phone_number;
-        phone.href = `tel:${member.phone_number}`;
-
+        
         const website = document.createElement('a');
         website.textContent = member.websiteUrl;
         website.href = member.websiteUrl;
 
         const section = document.createElement('section');
-        section.append(img, title, service, phone, website);
+        section.append(img, title, service, website);
 
         display.append(section);
 

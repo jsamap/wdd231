@@ -149,7 +149,7 @@ header img {
 
 
 h1 {
-	background-color: #333;
+	background-color: var(--primary-color);
 	color: #eee;
 	padding: 1rem;
 	text-align: center;
@@ -160,13 +160,12 @@ main {
 	padding: 0.5rem;
 	max-width: 90%;
 	background-color: #fff;
-	font-family: Acme, Arial, sans-serif;
 }
 
 .menu {
 	margin: 1rem auto;
 	padding: 0.5rem;
-	background-color: #333;
+	background-color: var(--font1-color);
 	text-align: center;
 
 	button {
@@ -181,7 +180,6 @@ section {
 	background-color: #ddd;
 
 	a {
-		font-family: Arial, sans-serif;
 		font-size: 0.85rem;
 		color: navy;
 	}
