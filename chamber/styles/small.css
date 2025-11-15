@@ -37,7 +37,6 @@ body {
 button {
     font-family: var(--body-font);
     font-size: 1rem;
-    width: 150px;
     padding: 0.5rem;
 }
 /* #endregion */
@@ -171,8 +170,13 @@ main {
 	text-align: center;
 
 	button {
-		padding: 0.5rem 1rem;
+		padding: 0.5rem;
 		font-weight: 700;
+
+        img{            
+            height: 24px;
+            filter: invert(100%);
+        }
 	}
 }
 
