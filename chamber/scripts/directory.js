@@ -3,6 +3,10 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
+
+const h2_placeholder = document.querySelector("#h2_placeholder");
+display.removeChild(h2_placeholder);
+
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
@@ -29,7 +33,7 @@ const displayMembers = (members) => {
 
         const service = document.createElement('p');
         service.textContent = member.service_type;
-        
+
         const website = document.createElement('a');
         website.textContent = member.websiteUrl;
         website.href = member.websiteUrl;
@@ -38,13 +42,6 @@ const displayMembers = (members) => {
         section.append(img, title, service, website);
 
         display.append(section);
-
-    });
-}
-function buildCards(members) {
-    members.forEach(member => {
-
-
 
     });
 }
