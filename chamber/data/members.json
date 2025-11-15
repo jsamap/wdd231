@@ -1,58 +1,66 @@
 [
     {
-        "name": "Spa Mundo Natural, S.A.",
-        "addresses": "Calle Real de Jocotenango #30 (Guatemala, Sacatepéquez, Región Central)",
-        "phone_number": "78310379",
-        "websiteUrl": "spamundonatural@gmail.com",
-        "image": "https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/326398526_1238545627084530_2992104111584902980_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=kmVFpQsPLwEQ7kNvwFz2C3G&_nc_oc=Adkm3W-5-xqvfxKS7PlW7Jq9jnYj9-FZ1aRdwl5tAyo9XQWgTSHZ-eKM9FffufI3Qix_oITqe1Fxo_6JTBkAEAqb&_nc_zt=23&_nc_ht=scontent.fgua2-2.fna&_nc_gid=-SuJDjxhw2W6PudhpIiM4Q&oh=00_AfgL7JwJNBF41kpzdEOHMQbptr2Jbm8TNSLovWsODiYR-g&oe=691D8809",
-        "service_type": "Spa, Medicamentos Naturales"
+        "name": "Las Águilas",
+        "address": "Avenida Los Aposentos, 8 Calle, Lote 87, Zona 1 (Guatemala, Chimaltenango, Región Central)",
+        "phone_number": "+(502) 7840-4743",
+        "websiteUrl": "https://colegiolasaguilas.edu.gt/",
+        "image": "https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/480350863_996117209242695_875285151838633399_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Y2lqDWlQQ2MQ7kNvwGHjPdu&_nc_oc=AdnsNvC86pfkNsP9AlSSlpnJuP2ne9JC0WXXL1B1IuT1NIRG6gyRLfXx78rOhhRW2mnYY1C1vise0zohFeq4KnVb&_nc_zt=23&_nc_ht=scontent.fgua2-2.fna&_nc_gid=ulloMT4stngOHj9yzmkoKw&oh=00_AfhhDBiPfzz2RcLx2kCNdrXJNT1gC0Z_jGjqkE4BKCrSww&oe=691D8AFC",
+        "service_type": "School"
     },
     {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
+        "name": "Jade Maya",
+        "address": "Callejón de La Concepción #8 (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 7931-2400",
+        "websiteUrl": "http://www.jademaya.com/",
+        "image": "https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/431656117_852277690244274_143573217534060703_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=M9m4L2eb4zkQ7kNvwFsh9DU&_nc_oc=Adn5NF41TSRFkR2urMlbwkx4JVyrFm4WLFUMBo9fZiuox49WWX18X-ZfGx09OnTPP4cnT5cCkisUL40pxFIZs_BU&_nc_zt=23&_nc_ht=scontent.fgua2-2.fna&_nc_gid=NuKd4V_h9HpFjlDeBG9Xjg&oh=00_AfgRIBS4e3oAoyAMChRHfkn7-4g-nv4jYp8IuKQZv-ibMA&oe=691DAE43",
+        "service_type": "Jewelry"
+    },
+    {
+        "name": "Remax Colonial",
+        "address": "9 Calle Poniente #6 (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 5051-5460",
+        "websiteUrl": "https://www.remax-colonial.gt/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQ-bQZL2qJ6lemzI0vi8SBd2q19NKXIKqBg&s",
+        "service_type": "Real Estate"
+    },
+    {
+        "name": "Tívoli",
+        "address": "4 Oriente Calle  Local 3 No. 10 Casa Antigua El Jaulón (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 2386-4200",
+        "websiteUrl": "https://www.viajestivoli.com/",
+        "image": "https://www.viajestivoli.com/wp-content/uploads/agile-store-locator/Logo/viajes-tivoli-s-61e8372d47b54.png",
+        "service_type": "Travel Agency"
+    },
+    {
+        "name": "Casa del Jade",
+        "address": "4 Calle  Oriente #10, Edificio El Jaulón (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 7932-5700",
+        "websiteUrl": "http://www.lacasadeljade.com/",
+        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/475839713_594713356527642_3460266607133264681_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7uJGRONv7YMQ7kNvwG103Wk&_nc_oc=AdnoQzt6AS7Srge3xcJSGrLl3juZd7QJA4iFFeX8TxP6a3YfTXrCgtKL89SAg4-2GZuXVC9RBQY0y2KQhA2SBBH2&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=28DKuKTHg9uTaEA581iLdw&oh=00_Afgm4AOig1hjpQH7UOZWd5U2HwExQDAsDArrAlEJxrquAQ&oe=691DA0F4",
         "service_type": ""
     },
     {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
-        "service_type": ""
+        "name": "INNODENT",
+        "address": "3 Avenida 2-54 B Zona 2 (Guatemala, Chimaltenango, Región Central)",
+        "phone_number": "+(502) 5488-2156",
+        "websiteUrl": "http://www.innodent.com.gt/",
+        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/481273735_1205590188233611_4675746966378629086_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=h7QAo82QwwUQ7kNvwEtpoE1&_nc_oc=AdlazrBnj30L4N4ShOqvttT1nRozq0VXGi9f-XHyJDnfELtksUlQ3R68zrSLCrP6qmnysBgpbcDgK6Dx3xDI25eM&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=DE0iqkeWGpRmMpMeGwY3Yg&oh=00_AfiBl9SvVd_lz14Uhqi48-jQqi0pcJXX7AjK7zBLW_Qfww&oe=691D9F35",
+        "service_type": "Dental Clinic"
     },
     {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
-        "service_type": ""
+        "name": "El Mástil",
+        "address": "Avenida La Recolección # 2 (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 7832-1789",
+        "websiteUrl": "http://www.elmastilgt.com/",
+        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/540737645_1162851262540956_7797248872456739938_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=ZO0gIOtzrUsQ7kNvwE3p8hX&_nc_oc=AdlKRtgWtX9zXZOs_2p-1o8gfazhlt9j7eQpnwgtJXTPN8jtDp4eK2W70rx-Rj0uy8lUsKASgpLPpQibyIkIEOlG&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=rXWYfqD92o58kKVE2CC8WA&oh=00_Afi48MptVdyL2GbrbNpit4fStjHu8LPm39-4yvicdvQqNg&oe=691DAF23",
+        "service_type": "Hardware Store"
     },
     {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
-        "service_type": ""
-    },
-    {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
-        "service_type": ""
-    },
-    {
-        "name": "",
-        "addresses": "",
-        "phone_number": "",
-        "websiteUrl": "",
-        "image": "",
-        "service_type": ""
+        "name": "Posada del Ángel",
+        "address": "4 Avenida  Sur #24-A (Guatemala, Sacatepéquez, Región Central)",
+        "phone_number": "+(502) 7832-0260",
+        "websiteUrl": "https://furcogt.com/",
+        "image": "https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/305487489_506530111476025_5646526328934462557_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=orly4SIQeXYQ7kNvwGrpBFr&_nc_oc=AdmyVKwLPyetz-kbtlWaus0Iu9-mc7BCh56ueKtvvuIBdZM2cmV0shQRAldBPodJNazD8w80cwKD1Zp-Om1QGjDG&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=DnWWNo8INFGHtAQb7WVHLQ&oh=00_AfhexeZ7rx-ZwravDtz9qTMrrZ26tHJjNaSwKtKlCY2utA&oe=691DA05F",
+        "service_type": "Hotel"
     }
 ]
