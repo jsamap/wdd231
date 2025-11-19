@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chamber of Commerce | WDD 231</title>
+    <title>Home | Chamber of Commerce | WDD 231</title>
     <meta name="description" content="WDD 231: Web Frontend Development I | Designed and developed by Jared Samayoa">
     <meta name="author" content="Jared Samayoa">
     <link rel="icon" href="images/favicon.ico">
@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory-small.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <meta property="og:title" content="Guatemala City's Chamber of Commere">
     <meta property="og:description"
@@ -37,23 +37,63 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a href="home" id="home">Home</a></li>
+                <li><a href="#" id="home" class="active">Home</a></li>
                 <li><a href="discover" id="discover">Discover</a></li>
-                <li><a href="#" id="directory" class="active">Directory</a></li>
+                <li><a href="directory" id="directory">Directory</a></li>
                 <li><a href="join" id="join">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-
-        <div class="menu">
-            <button id="grid"><img src="images/grid.svg" alt="grid"></button>
-            <button id="list"><img src="images/list.svg" alt="list"></button>
+        <div class="hero">
+            <img src="images/hero-lake.webp" alt="Lake hero image">
+            <button id="action-join">Join Us!</button>
         </div>
 
+        <h1>Home</h1>
+
+        
         <article class="grid">
             <h2 id="h2_placeholder">H2</h2>
+            <section>
+                <div class="grid-top">
+                    <h3>Events</h3>
+                </div>
+                <div class="events">
+                    <p>No upcoming events...</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-top">
+                    <h3>Current Weather</h3>
+                </div>
+                <div class="grid-bottom">
+                    <img id="weather-icon" src="images/weather.svg" alt="weather">
+                    <div>
+                        <p id="degrees"></p>
+                        <p id="description"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid-top">
+                    <h3>Weather Forecast</h3>
+                </div>
+                <div class="grid-bottom" id="forecast">
+                    
+                </div>
+            </section>
+        </article>
+
+        <article class="cards">
+            <h2 id="h2_placeholder_2">H2</h2>
         </article>
 
     </main>
