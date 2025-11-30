@@ -272,6 +272,21 @@ button a {
 
 /* #endregion */
 
+/* #region Thankyou */
+
+#thankyou {
+    max-width:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#thankyou P{
+    max-width:  500px;
+    padding: 50px 25px;
+}
+/* #endregion */
+
 /* #region Footer */
 footer {
     background-color: black;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Chamber of Commerce | WDD 231</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I | Designed and developed by Jared Samayoa">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <meta property="og:title" content="Guatemala City's Chamber of Commere">
+    <meta property="og:description"
+        content="Discover local businesses, events, and resources with the Guatemala City's Chamber of Commerce.">
+    <meta property="og:url" content="https://jsamap.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jsamap.github.io/wdd231/images/logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Guatemala City's Chamber of Commerce">
+</head>
+
+<body>
+    <header>
+        <button type="button" id="menu"><span>Menu</span></button>
+        <div class="header">
+            <img src="images/logo.svg" alt="logo">
+            <span>CHAMBER OF COMMERCE | GUATEMALA</span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="discover" id="discover">Discover</a></li>
+                <li><a href="directory" id="directory">Directory</a></li>
+                <li><a href="join" id="join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    <div id="thankyou"">
+        <p class="result" id="message"></p>
+    </div>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/jsamap"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/jaredsamayoa"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="http://wa.me/+50234000940"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+            <a href="https://www.xbox.com/en-us/play/user/HaloShot96"><img src="images/xbox.svg" alt="Xbox"></a>
+        </div>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared
+            Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
