@@ -9,6 +9,10 @@
     --font1-color: black;
     --font2-color: #f2f2f2;
     --font3-color: white;
+    --np-color: black;
+    --bronze-color: #6E4D25;
+    --silver-color: #767677;
+    --gold-color: #8D730B;
     --heading-font: "Merriweather", serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -223,7 +227,7 @@ form label{
 
 /* #region Memberships */
 
-button {
+#memberships div {
     font-family: var(--body-font);
     font-size: 1rem;
     border: 2px solid var(--accent2-color);
@@ -251,35 +255,35 @@ button a {
 }
 
 
-#memberships button:nth-child(2) {
+#memberships div:nth-child(2) {
     background-color: black;
 }
-#memberships button:nth-child(2) > *{
+#memberships div:nth-child(2) > *{
     color: white;
 }
-#memberships button:nth-child(3){
-    background-color: #6E4D25;
+#memberships div:nth-child(3){
+    background-color: var(--bronze-color);
     animation-delay: 0.3s;
 }
-#memberships button:nth-child(3) > *{
+#memberships div:nth-child(3) > *{
     color: white;
 }
-#memberships button:nth-child(4) {
-    background-color: #767677;
+#memberships div:nth-child(4) {
+    background-color: var(--silver-color);
     animation-delay: 0.65s;
 }
-#memberships button:nth-child(4) > *{
+#memberships div:nth-child(4) > *{
     color: white;
 }
-#memberships button:nth-child(5) {
-    background-color: #8D730B;
+#memberships div:nth-child(5) {
+    background-color: var(--gold-color);
     animation-delay: 1s;
 }
-#memberships button:nth-child(5) > *{
+#memberships div:nth-child(5) > *{
     color: white;
 }
 
-#memberships button{
+#memberships div{
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -288,11 +292,14 @@ button a {
 /* Modals */
 dialog {
     margin: auto;
-    height: 300px;
-    width: 300px;
+    width: 400px;
     padding: 0;
     border-radius: 10px;
     padding: 1rem;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.33s;
+    animation-fill-mode: forwards;
 }
 ::backdrop{
     background-color: rgb(0 0 0 /50%);
@@ -310,10 +317,23 @@ dialog a {
 }
 dialog h2 {
     margin-top: 15px;
-    color: #82858d;
+    color: black;
 }
 dialog p {
     padding: 15px;
+}
+
+.np {
+    color: var(--np-color);
+}
+.bronze {
+    color: var(--bronze-color);
+}
+.silver {
+    color: var(--silver-color);
+}
+.gold {
+    color: var(--gold-color);
 }
 
 /* #endregion */
