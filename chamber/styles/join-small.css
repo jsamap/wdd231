@@ -272,7 +272,6 @@ button a {
 #memberships div{
     font-family: var(--body-font);
     font-size: 1rem;
-    border: 2px solid var(--accent2-color);
     border-radius: 10px;
     text-align: center;  
     padding: 0.3rem;
