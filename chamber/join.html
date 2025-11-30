@@ -48,45 +48,48 @@
         <h1>Join Us</h1>
 
         <div id="main-content">
-
-            <form action="thankyou.html" method="get">
-                <label>First name<input type="text" id="fname" name="fname" required autocomplete="given-name"></label>
-                <label>Last name<input type="text" id="lname" name="lname" required autocomplete="family-name"></label>
-                <label>Email address<input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com"></label>
-                <label>Phone number<input type="phone" id="phone" name="phone" autocomplete="tel"></label>
-                <label>Organizational title<input type="text" id="org-title" name="org-title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
-                <label>Organization name<input type="text" id="org-name" required name="org-name" autocomplete="organization"></label>
-                <label>Organization description<textarea id="org-description" name="org-description"></textarea></label>
-                <label for="membership-level">Membership level
-                    <select id="membership-level" name="membership-level">
-                        <option value="" disabled selected>-- Select one --</option>
-                        <option value="np">Non Profit Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <input type="hidden" id="timestamp" name="timestamp"/>
-                <input type="submit">
-            </form>
-
+            <div id="form">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get">
+                    <label>First name<input type="text" id="fname" name="fname" required autocomplete="given-name"></label>
+                    <label>Last name<input type="text" id="lname" name="lname" required autocomplete="family-name"></label>
+                    <label>Email address<input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com"></label>
+                    <label>Phone number<input type="phone" id="phone" name="phone" autocomplete="tel"></label>
+                    <label>Organizational title<input type="text" id="org-title" name="org-title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                    <label>Organization name<input type="text" id="org-name" required name="org-name" autocomplete="organization"></label>
+                    <label>Organization description<textarea id="org-description" name="org-description"></textarea></label>
+                    <label for="membership-level">Membership level
+                        <select id="membership-level" name="membership-level">
+                            <option value="" disabled selected>-- Select one --</option>
+                            <option value="np">Non Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp"/>
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="spacer"></div>
             <div id="memberships">
-                <article>
-                    <h2>Non Profit</h2>
-                    <a href="">Learn more</a>
-                </article>
-                <article>
-                    <h2>Bronze</h2>
-                    <a href="">Learn more</a>
-                </article>
-                <article>
-                    <h2>Silver</h2>
-                    <a href="">Learn more</a>
-                </article>
-                <article>
-                    <h2>Gold</h2>
-                    <a href="">Learn more</a>
-                </article>
+                <h2>Membership Levels</h2>
+                <button>
+                    <h3>Non Profit</h3>
+                    <p>LEARN MORE</p>
+                </button>
+                <button>
+                    <h3>Bronze</h3>
+                    <p>LEARN MORE</p>
+                </button>
+                <button>
+                    <h3>Silver</h3>
+                    <p>LEARN MORE</p>
+                </button>
+                <button>
+                    <h3>Gold</h3>
+                    <p>LEARN MORE</p>
+                </button>
             </div>
         </div>
 

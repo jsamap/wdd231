@@ -130,9 +130,14 @@ main {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
     color: var(--secondary-color);
+    text-align: center;
+}
+h3 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
 }
 
 .header {
@@ -186,25 +191,83 @@ form label,
 form textarea,
 form select {
   display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+textarea {
+    height: 60px;
+}
+label:has(input[required])::before,
+label:has(textarea[required])::before,
+label:has(select[required])::before {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+  font-weight: bold;
+}
+input[type="submit"]{
+    height: 50px;
+    color: white;
+    background-color: #518831;
+}
+form label{
+    padding-bottom: 15px;
+}
+#form h2 {
   margin-bottom: 10px;
 }
+#spacer {
+    display: none;
+}
+
 
 /* #endregion */
 
 /* #region Memberships */
 
-article {
-    border: 2px solid var(--accent2-color);   /* thickness, style, color */
+button {
+    border: 2px solid var(--accent2-color);
     border-radius: 10px;
     text-align: center;  
     padding: 0.3rem;
     padding-bottom: 0.8rem;
-    margin: 10px;
-    
+    margin-top: 10px;
+    width: 100%;
 }
 
-article a {
+button a {
     text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#memberships button:nth-child(2) {
+    background-color: black;
+}
+#memberships button:nth-child(2) > *{
+    color: white;
+}
+#memberships button:nth-child(3){
+    /* background-color: #49371B; */
+    background-color: #6E4D25;
+}
+#memberships button:nth-child(3) > *{
+    color: white;
+}
+#memberships button:nth-child(4) {
+    background-color: #a5a9b4;
+}
+#memberships button:nth-child(4) > *{
+    color: white;
+}
+#memberships button:nth-child(5) {
+    background-color: #D3AF37;
+}
+#memberships button:nth-child(5) > *{
+    color: white;
 }
 
 /* #endregion */
