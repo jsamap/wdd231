@@ -244,34 +244,6 @@ button a {
     }
 }
 
-#memberships div:nth-child(2) {
-    background-color: black;
-}
-#memberships div:nth-child(2) > *{
-    color: white;
-}
-#memberships div:nth-child(3){
-    background-color: var(--bronze-color);
-    animation-delay: 0.3s;
-}
-#memberships div:nth-child(3) > *{
-    color: white;
-}
-#memberships div:nth-child(4) {
-    background-color: var(--silver-color);
-    animation-delay: 0.65s;
-}
-#memberships div:nth-child(4) > *{
-    color: white;
-}
-#memberships div:nth-child(5) {
-    background-color: var(--gold-color);
-    animation-delay: 1s;
-}
-#memberships div:nth-child(5) > *{
-    color: white;
-}
-
 #memberships div{
     font-family: var(--body-font);
     font-size: 1rem;
@@ -288,6 +260,35 @@ button a {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
+#memberships div:nth-child(2) {
+    background-color: black;
+}
+#memberships div:nth-child(2) > *{
+    color: white;
+}
+#memberships div:nth-child(3){
+    background-color: var(--bronze-color-w);
+    animation-delay: 0.3s;
+}
+#memberships div:nth-child(3) > *{
+    color: white;
+}
+#memberships div:nth-child(4) {
+    background-color: var(--silver-color-w);
+    animation-delay: 0.65s;
+}
+#memberships div:nth-child(4) > *{
+    color: white;
+}
+#memberships div:nth-child(5) {
+    background-color: var(--gold-color-w);
+    animation-delay: 1s;
+}
+#memberships div:nth-child(5) > *{
+    color: white;
+}
+
 
 /* Modals */
 dialog {
