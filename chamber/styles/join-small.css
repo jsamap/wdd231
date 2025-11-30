@@ -244,6 +244,17 @@ button a {
     font-size: 0.9rem;
 }
 
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 #memberships button:nth-child(2) {
     background-color: black;
 }
@@ -251,23 +262,32 @@ button a {
     color: white;
 }
 #memberships button:nth-child(3){
-    /* background-color: #49371B; */
     background-color: #6E4D25;
+    animation-delay: 0.3s;
 }
 #memberships button:nth-child(3) > *{
     color: white;
 }
 #memberships button:nth-child(4) {
     background-color: #a5a9b4;
+    animation-delay: 0.65s;
 }
 #memberships button:nth-child(4) > *{
     color: white;
 }
 #memberships button:nth-child(5) {
     background-color: #D3AF37;
+    animation-delay: 1s;
 }
 #memberships button:nth-child(5) > *{
     color: white;
+}
+
+#memberships button{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 /* #endregion */
