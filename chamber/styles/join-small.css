@@ -251,21 +251,21 @@ button a {
     color: white;
 }
 #memberships div:nth-child(3){
-    background-color: var(--bronze-color-w);
+    background-color: var(--bronze-color);
     animation-delay: 0.3s;
 }
 #memberships div:nth-child(3) > *{
     color: white;
 }
 #memberships div:nth-child(4) {
-    background-color: var(--silver-color-w);
+    background-color: var(--silver-color);
     animation-delay: 0.65s;
 }
 #memberships div:nth-child(4) > *{
     color: white;
 }
 #memberships div:nth-child(5) {
-    background-color: var(--gold-color-w);
+    background-color: var(--gold-color);
     animation-delay: 1s;
 }
 #memberships div:nth-child(5) > *{
