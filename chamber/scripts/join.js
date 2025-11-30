@@ -25,3 +25,9 @@ document.getElementById("submit").onclick = function () {
 
 
 // MODALS
+const np = document.querySelector("#modal");
+np.showModal();
+
+document.getElementById("close").onclick = function () {
+    np.close();
+}

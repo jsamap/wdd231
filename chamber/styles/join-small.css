@@ -269,14 +269,14 @@ button a {
     color: white;
 }
 #memberships button:nth-child(4) {
-    background-color: #a5a9b4;
+    background-color: #767677;
     animation-delay: 0.65s;
 }
 #memberships button:nth-child(4) > *{
     color: white;
 }
 #memberships button:nth-child(5) {
-    background-color: #D3AF37;
+    background-color: #8D730B;
     animation-delay: 1s;
 }
 #memberships button:nth-child(5) > *{
@@ -288,6 +288,36 @@ button a {
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+/* Modals */
+dialog {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    border-radius: 10px;
+    padding: 1rem;
+}
+::backdrop{
+    background-color: rgb(0 0 0 /50%);
+}
+dialog a {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+dialog h2 {
+    margin-top: 15px;
+    color: #82858d;
+}
+dialog p {
+    padding: 15px;
 }
 
 /* #endregion */
