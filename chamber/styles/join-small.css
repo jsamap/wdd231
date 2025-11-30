@@ -13,6 +13,9 @@
     --bronze-color: #926E41;
     --silver-color: #767677;
     --gold-color: #8D730B;
+    --bronze-color-w: #6c5130;
+    --silver-color-w: #535353;
+    --gold-color-w: #675408;
     --heading-font: "Merriweather", serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -248,21 +251,21 @@ button a {
     color: white;
 }
 #memberships div:nth-child(3){
-    background-color: var(--bronze-color);
+    background-color: var(--bronze-color-w);
     animation-delay: 0.3s;
 }
 #memberships div:nth-child(3) > *{
     color: white;
 }
 #memberships div:nth-child(4) {
-    background-color: var(--silver-color);
+    background-color: var(--silver-color-w);
     animation-delay: 0.65s;
 }
 #memberships div:nth-child(4) > *{
     color: white;
 }
 #memberships div:nth-child(5) {
-    background-color: var(--gold-color);
+    background-color: var(--gold-color-w);
     animation-delay: 1s;
 }
 #memberships div:nth-child(5) > *{
