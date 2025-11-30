@@ -54,7 +54,7 @@
                     <label>First name<input type="text" id="fname" name="fname" required autocomplete="given-name"></label>
                     <label>Last name<input type="text" id="lname" name="lname" required autocomplete="family-name"></label>
                     <label>Email address<input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com"></label>
-                    <label>Phone number<input type="phone" id="phone" name="phone" autocomplete="tel"></label>
+                    <label>Phone number<input type="phone" id="phone" name="phone" required autocomplete="tel"></label>
                     <label>Organizational title<input type="text" id="org-title" name="org-title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
                     <label>Organization name<input type="text" id="org-name" required name="org-name" autocomplete="organization"></label>
                     <label>Organization description<textarea id="org-description" name="org-description"></textarea></label>
@@ -92,7 +92,9 @@
                 </button>
             </div>
         </div>
+        <dialog>
 
+        </dialog>
     </main>
     <footer>
         <div class="social">
