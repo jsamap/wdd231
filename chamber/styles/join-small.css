@@ -10,7 +10,7 @@
     --font2-color: #f2f2f2;
     --font3-color: white;
     --np-color: black;
-    --bronze-color: #6E4D25;
+    --bronze-color: #926E41;
     --silver-color: #767677;
     --gold-color: #8D730B;
     --heading-font: "Merriweather", serif;
@@ -227,23 +227,10 @@ form label{
 
 /* #region Memberships */
 
-#memberships div {
-    font-family: var(--body-font);
-    font-size: 1rem;
-    border: 2px solid var(--accent2-color);
-    border-radius: 10px;
-    text-align: center;  
-    padding: 0.3rem;
-    padding-bottom: 0.8rem;
-    margin-top: 10px;
-    width: 100%;
-}
-
 button a {
     text-decoration: none;
     font-size: 0.9rem;
 }
-
 
 @keyframes fadeIn {
     0% {
@@ -253,7 +240,6 @@ button a {
         opacity: 1;
     }
 }
-
 
 #memberships div:nth-child(2) {
     background-color: black;
@@ -284,16 +270,26 @@ button a {
 }
 
 #memberships div{
+    font-family: var(--body-font);
+    font-size: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 10px;
+    text-align: center;  
+    padding: 0.3rem;
+    padding-bottom: 0.8rem;
+    margin-top: 10px;
+    width: 100%;
+
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
 /* Modals */
 dialog {
     margin: auto;
     width: 400px;
-    padding: 0;
     border-radius: 10px;
     padding: 1rem;
     opacity: 0;
