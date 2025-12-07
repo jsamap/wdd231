@@ -5,12 +5,22 @@
     #allplaces div {
         grid-template-areas: 
         "photograph name"
+        "photograph location"
         "photograph description"
-        "photograph location";
+        "photograph button";
     }
 
     #allplaces div img {
         width: 300px;
+    }
+    #allplaces div:hover {
+    	box-shadow: 0 0 50px #333;
+    }
+    #allplaces div h2 {
+        margin-bottom: 0;
+    }
+    #allplaces div address {
+        margin-top: 0;
     }
 
     /* #endregion */

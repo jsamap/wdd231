@@ -15,10 +15,13 @@ const displayPlaces = (place) => {
         description.textContent = place.description;
 
         const address = document.createElement('address');
-        address.textContent = place.websiteUrl;
+        address.textContent = place.address;
+
+        const button = document.createElement('a');
+        button.textContent = "LEARN MORE";
 
         const placeContainer = document.createElement('div');
-        placeContainer.append(img, name, description, address);
+        placeContainer.append(img, name, description, address, button);
 
         const container = document.getElementById('allplaces');
         container.append(placeContainer);
@@ -26,6 +29,8 @@ const displayPlaces = (place) => {
     });
 }
 displayPlaces();
+
+
 
 // SET MESSAGE FOR LAST VISIT
 const lastVisitElement = document.querySelector('#lastVisit p');
@@ -49,6 +54,7 @@ if (lastVisit == null) {
         }
     }
 }
+
 
 
 // LAST VISIT MODAL - OPEN / CLOSE
