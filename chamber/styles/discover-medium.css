@@ -9,6 +9,10 @@
         "photograph location";
     }
 
+    #allplaces div img {
+        width: 300px;
+    }
+
     /* #endregion */
 
     /* #region Hamburger Menu */

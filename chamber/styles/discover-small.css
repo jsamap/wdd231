@@ -129,13 +129,6 @@ main {
     margin: 0 auto;
 }
 
-h2 {
-    font-size: 1rem;
-    padding: 0.5rem;
-    color: var(--font3-color);
-    background-color: var(--font1-color);
-}
-
 .header {
     display: flex;
     width: 85%;
@@ -207,6 +200,34 @@ h1 {
 }
 
 /* #endregion */
+
+/* #region Visit */ 
+
+#lastVisit {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+    color: white;
+    background-color: var(--tertiary-color);
+}
+
+#lastVisit a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+#lastVisit p {
+    font-weight: bold;
+}
+
+/* #endregion */
+
 
 /* #region Footer */
 footer {
