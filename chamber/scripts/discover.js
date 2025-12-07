@@ -39,11 +39,14 @@ if (lastVisit == null) {
     const lastVisitDate = new Date(lastVisit);
     
     const daysDiff = Math.floor((today - lastVisitDate) / (1000 * 60 * 60 * 24));
-    if (daysDiff <= 1) {
+    if (daysDiff < 1) {
         lastVisitElement.textContent = 'Back so soon! Awesome!';
     } else {
-        lastVisitElement.textContent = `You last visited ${daysDiff} days ago.`;
-
+        if (daysDiff == 1) {
+            lastVisitElement.textContent = `You last visited ${daysDiff} day ago.`;
+        } else {
+            lastVisitElement.textContent = `You last visited ${daysDiff} days ago.`;
+        }
     }
 }
 
