@@ -39,7 +39,6 @@ const today = new Date();
 
 if (lastVisit == null) {
     lastVisitElement.textContent = 'Welcome! Let us know if you have any questions.';
-    localStorage.setItem("lastvisit-cc", today);
 } else {
     const lastVisitDate = new Date(lastVisit);
     
@@ -54,6 +53,7 @@ if (lastVisit == null) {
         }
     }
 }
+localStorage.setItem("lastvisit-cc", today);
 
 
 
