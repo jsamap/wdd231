@@ -1,10 +1,12 @@
-@media (min-width: 1024px) {
+@media (min-width: 665px) {
 
     /* #region Places */ 
 
-    #allplaces {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    #allplaces div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location";
     }
 
     /* #endregion */
