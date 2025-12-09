@@ -9,15 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/navigation.js" type="module"></script>
     <script src="scripts/contact.js" defer></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Tail Trails GT">
+    <meta property="og:description" content="Tail Trails is your go-to destination for outdoor adventures with dogs! Hike scenic paths, bike rugged terrain, and splash into lakes together. Unleash the fun!">
+    <meta property="og:url" content="https://jsamap.github.io/wdd231/project/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://jsamap.github.io/wdd231/project/images/logo-black.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tail Trials GT">
 </head>
 <body>
     <header>
         <button type="button" id="menu"><span>Menu</span></button>
         <div class="header">
-            <img src="images/logo-white.webp" alt="TT logo">
+            <img src="images/logo-white.webp" alt="TT logo" loading="lazy">
             <h1>TAIL<br>TRAILS</h1>
         </div>
         <nav>
@@ -31,7 +43,7 @@
     <main>
         <div class="banner">
             <h2>Adventure is better with a furry friend</h2>
-            <img src="images/k-beach-paws.webp" alt="Paws in sand">
+            <img src="images/k-beach-paws.webp" alt="Paws in sand" loading="lazy">
         </div>
         <div class="form">
             <h2>Join the pack today!</h2>
@@ -60,26 +72,33 @@
             <h2>Why join Tail Trails?</h2>
             <div>
                 <div>
-                    <img src="images/j-happy.webp" alt="">
+                    <img src="images/j-happy.webp" alt="Be happy" loading="lazy">
                     <h3>Be<br>Happy</h3>
                 </div>
                 <div>
-                    <img src="images/j-friends.webp" alt="">
+                    <img src="images/j-friends.webp" alt="Make friends" loading="lazy">
                     <h3>Make<br>Friends</h3>
                 </div>
                 <div>
-                    <img src="images/j-explore-2.webp" alt="">
+                    <img src="images/j-explore-2.webp" alt="Explore nature" loading="lazy">
                     <h3>Explore &<br>Connect</h3>
                 </div>
                 <div>
-                    <img src="images/j-equipment.webp" alt="">
+                    <img src="images/j-equipment.webp" alt="Get equipped" loading="lazy">
                     <h3>Get<br>Started</h3>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <div class="social">
+            <a href="https://github.com/jsamap"><img src="images/github.svg" alt="GitHub" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/jaredsamayoa"><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+            <a href="http://wa.me/+50234000940"><img src="images/whatsapp.svg" alt="WhatsApp" loading="lazy"></a>
+            <a href="https://www.xbox.com/en-us/play/user/HaloShot96"><img src="images/xbox.svg" alt="Xbox" loading="lazy"></a>
+        </div>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared
+            Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
         <p class="lastModified"><span id="lastModified"></span></p>
     </footer>
 </body>

@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/date.js" type="module"></script>
+    <script src="scripts/navigation.js" type="module"></script>
     <script src="scripts/home.js" defer></script>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
@@ -45,15 +48,32 @@
                 <button id="join">JOIN US</button>
             </div>
             <div class="hero-img">
-                <img src="images/k-pino-paddle.webp" alt="TT homepage">
+                <img src="images/k-pino-paddle.webp" alt="TT homepage" loading="lazy">
             </div>
         </div><br>
         <h2>Our Trips</h2>
         <div class="container">
         </div>
+        <dialog id="modal">
+            <a href="#" id="close">&#10060;</a>
+            <div>
+                <h2 id="modal-title">Trip</h2>
+                <p id="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat cupiditate officia, tempore ex illum?</p>
+                <p id="modal-features">Features</p>
+                <p id="modal-date-location">January 1, 2025 | Guatemala City</p>
+                <button id="modal-button" class="more-btn">SEE ALL TRIPS</button>
+            </div>
+            </dialog>
     </main>
     <footer>
-        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <div class="social">
+            <a href="https://github.com/jsamap"><img src="images/github.svg" alt="GitHub" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/jaredsamayoa"><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+            <a href="http://wa.me/+50234000940"><img src="images/whatsapp.svg" alt="WhatsApp" loading="lazy"></a>
+            <a href="https://www.xbox.com/en-us/play/user/HaloShot96"><img src="images/xbox.svg" alt="Xbox" loading="lazy"></a>
+        </div>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared
+            Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
         <p class="lastModified"><span id="lastModified"></span></p>
     </footer>
 </body>

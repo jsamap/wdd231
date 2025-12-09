@@ -1,36 +1,5 @@
 // TRIPS
 const container = document.querySelector(".container");
-const trips = [
-	{
-		name: "Fuentes del Pacaya",
-		description: "Visit this waterfall at the foothill of the volcano.",
-		location: "San Vicente, Escuintla",
-		date: "June 1, 2024",
-		features: "Hike, waterfall, volcano",
-		imageUrl:
-			"images/t-pacaya.webp"
-	},
-	{
-		name: "Laguna El Pino",
-		description: "A quiet lagoon where you can rest and swim.",
-		location: "Barberena, Santa Rosa",
-		date: "August 7, 2025",
-		features: "Swim, paddleboard, boat",
-		imageUrl:
-			"images/t-pino-boat.webp"
-	},
-	{
-		name: "Parque La Cerra",
-		description: "Become the king of the hill, wether you hike or bike.",
-		location: "San Miguel, Guatemala",
-		date: "September 14, 2024",
-		features: "Hiking, biking, views",
-		imageUrl:
-			"images/t-cerra-bikes.webp"
-	}
-];
-
-buildCards(trips);
 
 function buildCards(tripsArray){
 	tripsArray.forEach(trip => {
@@ -50,8 +19,12 @@ function buildCards(tripsArray){
 		divImg.appendChild(img);
 
 		const btn = document.createElement('button');
-		btn.textContent = "SEE MORE TRIPS";
+		btn.textContent = "SEE MORE";
 		btn.classList.add("more-btn");
+		btn.onclick = function () {
+			showTrip(trip);
+		};
+
 		const divBtn = document.createElement('div');
 		divBtn.classList.add("card-child");
 		divBtn.appendChild(btn);
@@ -64,29 +37,46 @@ function buildCards(tripsArray){
 	});
 }
 
+//   FETCH MEMBERS DATA
+const fetchData = async () => {
+    try {
+        const response = await fetch("data/trips.json"); // Wait for the fetch to complete
+        const data = await response.json(); // Wait for the response to be converted to JSON
+        const filteredData = data.slice(0,3);
+		console.log(filteredData); // Output the fetched data
+
+		try{
+	        buildCards(filteredData);
+		} catch (errorCards) {
+			console.error("Error building cards:", errorCards)
+		}
+		
+    } catch (error) {
+        console.error("Error fetching data:", error); // Handle any errors
+    }
+};
+fetchData();
+
 // BUTTONS
 document.getElementById("join").onclick = function () {
 	location.href = "contact";
 };
 
-const btns = document.querySelectorAll('.more-btn');
-btns.forEach(button => {
-	button.addEventListener('click', () => {
-		location.href = "trips";
-  	});
-});
+// MODALS
+const modal = document.querySelector("#modal");
 
+document.getElementById("close").onclick = function () {
+    modal.close();
+}
+document.querySelector("#modal-button").onclick = function () {
+	location.href = "trips";
+};
 
-// NAV / HAMBURGER
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
-// FOOTER
-const currentYear = document.querySelector("#currentYear");
-const lastModified = document.querySelector("#lastModified");
-currentYear.innerHTML = new Date().getFullYear();
-lastModified.innerHTML = `Last modification: ${new Date(document.lastModified).toLocaleString('en-US')}`;
+function showTrip(trip){
+	document.querySelector("#modal-title").textContent = trip.name;
+	modal.style.background = `url("${trip.imageUrl}") center / cover no-repeat`;
+	document.querySelector("#modal-description").textContent = trip.description;
+	document.querySelector("#modal-date-location").textContent = `${trip.date} | ${trip.location}`;
+	document.querySelector("#modal-features").textContent = trip.features;
+	modal.showModal();
+}

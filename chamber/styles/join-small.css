@@ -288,9 +288,9 @@ button a {
 #memberships div:nth-child(5) > *{
     color: white;
 }
+/* #endregion */
 
-
-/* Modals */
+/* #region Modals */
 dialog {
     margin: auto;
     width: 400px;
