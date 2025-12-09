@@ -227,7 +227,7 @@ dialog {
     text-align: center;
 }
 ::backdrop{
-    background-color: rgb(0 0 0 /50%);
+    background-color: rgb(0 0 0 /75%);
 }
 dialog div {
     background-color: rgb(255 255 255 /65%);
