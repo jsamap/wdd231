@@ -1,9 +1,5 @@
 // TRIPS
-import {trips} from '../data/trips.mjs';
-
 const container = document.querySelector(".container");
-
-buildCards(trips);
 
 function buildCards(tripsArray){
 	tripsArray.forEach(trip => {
@@ -45,3 +41,23 @@ function buildCards(tripsArray){
 		container.appendChild(div);
 	});
 }
+
+
+//   FETCH MEMBERS DATA
+const fetchData = async () => {
+    try {
+        const response = await fetch("data/trips.json"); // Wait for the fetch to complete
+        const data = await response.json(); // Wait for the response to be converted to JSON
+		console.log(data); // Output the fetched data
+
+		try{
+	        buildCards(data);
+		} catch (errorCards) {
+			console.error("Error building cards:", errorCards)
+		}
+		
+    } catch (error) {
+        console.error("Error fetching data:", error); // Handle any errors
+    }
+};
+fetchData();

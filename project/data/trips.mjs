@@ -1,4 +1,4 @@
-export const trips = [
+export const tripsArray = [
 	{
 		name: "Fuentes del Pacaya",
 		description: "Visit this waterfall at the foothill of the volcano.",
