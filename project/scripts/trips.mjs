@@ -46,7 +46,7 @@ function buildCards(tripsArray){
 //   FETCH MEMBERS DATA
 const fetchData = async () => {
     try {
-        const response = await fetch("data/trips.json");
+        const response = await fetch("data/trips-array.json");
         const data = await response.json();
 		console.log(data); //
 

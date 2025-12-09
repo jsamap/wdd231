@@ -1,5 +1,5 @@
 // TRIPS
-import {tripsArray} from '../data/trips.mjs';
+import {tripsArray} from '../data/trips-array.mjs';
 const tripsArrayFiltered = tripsArray.slice(0,3);
 
 const container = document.querySelector(".container");
