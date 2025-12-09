@@ -46,9 +46,9 @@ function buildCards(tripsArray){
 //   FETCH MEMBERS DATA
 const fetchData = async () => {
     try {
-        const response = await fetch("data/trips.json"); // Wait for the fetch to complete
-        const data = await response.json(); // Wait for the response to be converted to JSON
-		console.log(data); // Output the fetched data
+        const response = await fetch("data/trips.json");
+        const data = await response.json();
+		console.log(data); //
 
 		try{
 	        buildCards(data);
@@ -57,7 +57,7 @@ const fetchData = async () => {
 		}
 		
     } catch (error) {
-        console.error("Error fetching data:", error); // Handle any errors
+        console.error("Error fetching data:", error);
     }
 };
 fetchData();

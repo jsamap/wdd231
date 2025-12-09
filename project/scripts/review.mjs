@@ -1,5 +1,6 @@
 // FNAME AND DNAME IN MESSAGE
-let fname = window.localStorage.getItem("fname-tt");
+const params = new URLSearchParams(window.location.search)
+let fname = params.get("fname");
 let dname = window.localStorage.getItem("dname-tt");
 
 console.log(`review fname: ${fname} - ${dname}`);

@@ -318,6 +318,7 @@ footer {
 #footer {
     font-size: 1rem;
     color: var(--font3-color);
+    padding-top: 10px;
 }
 
 #lastModified {
@@ -329,4 +330,12 @@ footer {
     margin-top: 0.25rem;
 }
 
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+footer > a:hover {
+    color: var(--tertiary-color);
+}
 /* #endregion */
